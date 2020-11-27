@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 307
+  Height = 518
+  Top = 105
+  Width = 877
+  Caption = 'Form1'
+  ClientHeight = 518
+  ClientWidth = 877
+  LCLVersion = '2.0.6.0'
+  object Image1: TImage
+    Left = 152
+    Height = 328
+    Top = 40
+    Width = 354
+    AutoSize = True
+  end
+  object btnLoad: TButton
+    Left = 32
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'Load Image'
+    OnClick = btnLoadClick
+    TabOrder = 0
+  end
+  object btnLPF: TButton
+    Left = 32
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Smoothing'
+    OnClick = btnLPFClick
+    TabOrder = 1
+  end
+  object btnHPF1: TButton
+    Left = 32
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Sharpening'
+    TabOrder = 2
+  end
+  object btnHPF0: TButton
+    Left = 32
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'Deteksi Tepi'
+    TabOrder = 3
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    left = 680
+    top = 48
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    left = 816
+    top = 48
+  end
+end
